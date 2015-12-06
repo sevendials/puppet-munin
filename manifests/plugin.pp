@@ -25,11 +25,11 @@
 # }
 #
 define munin::plugin (
-  $source         = '',
-  $source_config  = '',
-  $linkplugins    = '',
-  $content        = '',
-  $content_config = '',
+  $source         = false,
+  $source_config  = false,
+  $linkplugins    = false,
+  $content        = false,
+  $content_config = false,
   $enable         = true ) {
 
   $ensure = bool2ensure($enable)
